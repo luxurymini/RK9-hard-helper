@@ -9,8 +9,6 @@ const BossIds = {
 	id: [1000, 2000, 3000], //id
 };
 
-let currentBoss = null;
-
 let isReverse;
 let firstSkill;
 let lastSkill;
