@@ -41,7 +41,7 @@ module.exports = function RouletteAssist(dispatch) {
 		}
 	});
 
-	// 1,2냄 정함
+	// 1넴
 	dispatch.hook('S_ACTION_STAGE', 1, event => {
 		if (!enabled || !boss) return;
 		if (boss.id - event.source == 0) {
@@ -49,7 +49,7 @@ module.exports = function RouletteAssist(dispatch) {
 		}
 	});
 
-	// 3냄 문제
+	// 3넴 문제
 	dispatch.hook('S_QUEST_BALLOON', 1, event => {
 		if (!enabled || !boss) return;
 		const msgId = parseInt(event.message.replace('@monsterBehavior:', ''));
@@ -74,7 +74,7 @@ module.exports = function RouletteAssist(dispatch) {
 		firstSkill = lastSkill;
 	});
 
-	// 3냄 이벤트
+	// 3넴 이벤트
 	dispatch.hook('S_DUNGEON_EVENT_MESSAGE', 1, event => {
 		if (!enabled || !boss) return;
 		const msgId = parseInt(event.message.replace('@dungeon:', ''));
@@ -105,7 +105,7 @@ module.exports = function RouletteAssist(dispatch) {
 
 	function firstBoss(event) {
 		// 1넴 피자 어시스트
-		var skillNum = event.skill;
+		const skillNum = event.skill;
 		let msg;
 
 		switch (skillNum) {
