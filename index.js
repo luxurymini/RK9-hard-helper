@@ -13,7 +13,7 @@ let isReverse;
 let firstSkill;
 let lastSkill;
 
-module.exports = function RouletteAssist(dispatch) {
+module.exports = function RK9HardHelper(dispatch) {
 	let enabled = true;
 	let boss = false;
 
